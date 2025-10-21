@@ -66,7 +66,7 @@ The dynamic behavior of the power-grid network is analyzed using the `Dynamic_an
 <img width="4624" height="206" alt="eq1" src="https://github.com/user-attachments/assets/99dbdeab-ecd3-444d-9929-6cdb02a37ca6" />
 
 
-where $$delta_i$$ denotes the voltage phase angle of generator $$i$$, MiM_i and $$D_i$$ denotes its inertia and damping coefficients, $$P_{i(0)}$$ is the mechanical power of node, and $$P_{i(e)}$$ is the electric power of node. To reflect the low-inertia characteristics of wind and solar generators, a uniform inertia constant of 0.01 is assigned to them—approximately one-third of the minimum inertia constant among conventional power sources. The damping coefficient is uniformly set to 0.005. The imbalance between $$P_{i(e)}$$ and  $$P_{i(0)}$$ caused by the disturbance is the driving factor behind the onset of power system oscillations and potential instability. 
+where $$\delta_i$$ denotes the voltage phase angle of generator $$i$$, $$M_i$$ and $$D_i$$ denotes its inertia and damping coefficients, $$P_{i(0)}$$ is the mechanical power of node, and $$P_{i(e)}$$ is the electric power of node. To reflect the low-inertia characteristics of wind and solar generators, a uniform inertia constant of 0.01 is assigned to them—approximately one-third of the minimum inertia constant among conventional power sources. The damping coefficient is uniformly set to 0.005. The imbalance between $$P_{i(e)}$$ and  $$P_{i(0)}$$ caused by the disturbance is the driving factor behind the onset of power system oscillations and potential instability. 
 
 The dynamics of load nodes are described by first-order equations: 
 
