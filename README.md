@@ -28,15 +28,15 @@ The parameters and geographical locations of these generators are based on datas
 #### Wind and solar power generations
 Based on the location and generation capacity data provided in Ref. [3], a total of 2,423 photovoltaic power stations and 32,644 wind turbines in the PSF region have been integrated into the European power grid model. Solar/wind generators with unreported generation capacity were turned off in the model.
 
-
-<img width="3096" height="807" alt="图片5" src="https://github.com/user-attachments/assets/e7d3ff6c-a4a5-45a8-bb81-2b1bdd1418c8" />
+<img width="3096" height="807" alt="2" src="https://github.com/user-attachments/assets/cb75bc5b-a4d3-4312-a709-f67dbd675493" />
 
 **Table S1:** *List of the 13 types of power sources included in the European model, along with their corresponding abbreviations.*
 
 
 Based on data provided by the transmission system operators (TSO), Fig. S2a-c shows the power generation profiles of Portugal [5], Spain [5], and France [6] on April 28, 2025. The blackout happened around 12:32 pm (UTC+01:00). To reflect this generation mix in the simulations, we pre-adjusted the generator outputs and power flows in the PSF region so that the modeled power mix in the three countries matches the conditions observed on that date, as shown in Fig. S2d-f.
 
-<img width="2685" height="2090" alt="Energy_mix" src="https://github.com/user-attachments/assets/8b0e53cf-fe2f-4099-b6e8-032ab95a96f3" />
+<img width="2685" height="2090" alt="3" src="https://github.com/user-attachments/assets/fd1d8d46-738e-46bb-b877-f79ab5d9c288" />
+
 
 **Fig. S2:**
 *(a,b,c) Generation mix of Portugal, Spain, and France on April 28, 2025 as reported by the TSO. Portugal and Spain exhibit similar structures, with solar and wind power dominating their generation portfolios. In contrast, nuclear power constitutes the dominant source in France.
@@ -49,9 +49,7 @@ Under the above power flow conditions, we use the MATPOWER toolbox to solve the 
 
 A notable observation is the reduced power transfer across the interconnections between the Iberian Peninsula and continental Europe prior to the blackout event, indicating a relatively light loading condition on these transmission corridors. To reflect this, we applied pre-adjustments to the power flow configuration, ensuring that the main power transfer was directed from Spain to France, with a net exchange of approximately 0.51 GW.
 
-
-
-<img width="1000" alt="Power_flow" src="https://github.com/user-attachments/assets/21a0563d-f616-4538-84fe-50e3bf66792b" />
+<img width="1000" alt="Power_flow" src="https://github.com/user-attachments/assets/62e63c64-b4f0-4492-8391-186e866db998" />
 
 **Fig. S3:** *Distribution of power flows in the continental European grid.*
 
