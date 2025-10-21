@@ -10,7 +10,7 @@ The European power-grid model incorporates **7,343** transmission lines, **3,809
 
 For power system analysis, we utilize widely adopted open-source tools, including the power flow solver MATPOWER [4] and the time-domain dynamic simulation framework described in Ref. [2]. Both tools are implemented in MATLAB, and we recommend using version R2024a for compatibility. See the reference below for more details.
 
-<img width="2695" height="1480" alt="Distribution_Reanewable" src="https://github.com/user-attachments/assets/be113841-b522-40ba-b91d-96f136c1f41b" />
+<img width="2695" height="1480" alt="1" src="https://github.com/user-attachments/assets/791be8ea-0292-4004-998c-c2e377a3f349" />
 
 
 
