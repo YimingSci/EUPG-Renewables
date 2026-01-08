@@ -34,7 +34,7 @@ Based on the location and generation capacity data provided in Ref. [3], a total
 
 Fig. S2 shows the inertia coefficients grouped by generation type. Circles indicate the mean value for each type, and error bars span the minimum and maximum values among generators of the same type.
 
-<img width="2471" height="1520" alt="Picture2" src="https://github.com/user-attachments/assets/d58cef8a-0e02-4ada-841e-c97bc3560626" />
+<img width="1571" alt="Picture2" src="https://github.com/user-attachments/assets/d58cef8a-0e02-4ada-841e-c97bc3560626" />
 
 **Fig. S2:** *Inertia coefficients as a function of the generation type.*
 
