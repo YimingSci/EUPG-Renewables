@@ -32,6 +32,12 @@ Based on the location and generation capacity data provided in Ref. [3], a total
 
 **Table S1:** *List of the 13 types of power sources included in the European model, along with their corresponding abbreviations.*
 
+Fig. S2 shows the inertia coefficients grouped by generation type. Circles indicate the mean value for each type, and error bars span the minimum and maximum values among generators of the same type.
+
+<img width="2471" height="1520" alt="Picture2" src="https://github.com/user-attachments/assets/d58cef8a-0e02-4ada-841e-c97bc3560626" />
+
+**Fig. S2:** *Inertia coefficients as a function of the generation type.*
+
 
 Based on data provided by the transmission system operators (TSO), Fig. S3a-c shows the power generation profiles of Portugal [5], Spain [5], and France [6] on April 28, 2025. The blackout happened around 12:32 pm (UTC+01:00). To reflect this generation mix in the simulations, we pre-adjusted the generator outputs and power flows in the PSF region so that the modeled power mix in the three countries matches the conditions observed on that date, as shown in Fig. S3d-f.
 
