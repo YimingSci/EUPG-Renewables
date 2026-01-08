@@ -14,7 +14,7 @@ For power system analysis, we utilize widely adopted open-source tools, includin
 
 
 
-**Fig. S2:** *Geographic distribution of generator/load nodes in the continental European power grid. The blue data points represent the locations of generator/load nodes reported in dataset [2], which was developed in 2018 and does not include wind or solar generators. The red data points show the geographic distribution of wind and solar generators in the PSF region, based on dataset [3].*
+**Fig. S1:** *Geographic distribution of generator/load nodes in the continental European power grid. The blue data points represent the locations of generator/load nodes reported in dataset [2], which was developed in 2018 and does not include wind or solar generators. The red data points show the geographic distribution of wind and solar generators in the PSF region, based on dataset [3].*
 
 
 
