@@ -35,7 +35,7 @@ Based on the location and generation capacity data provided in Ref. [3], a total
 
 Fig. S2 shows the inertia coefficients grouped by generation type. Circles indicate the mean value for each type, and error bars span the minimum and maximum values among generators of the same type.
 
-In this model, the inertia of inverter-based generators operating in grid-forming (GFM) mode is parameterized using the inertia constant H, following the formulation adopted in the ENTSO-E technical report on grid-forming capability (Ref. [9]).
+In this model, the inertia of inverter-based generators operating in grid-forming (GFM) mode is parameterized using the inertia constant $H$ , following the formulation adopted in the ENTSO-E technical report on grid-forming capability (Ref. [9]).
 
 According to the ENTSO-E report (pp. 18–19), synthetic inertia is expressed in terms of the ramp-up time TR,PPMT_{R,PPM} (in seconds), defined as
 
@@ -115,7 +115,7 @@ Then, the power flow equations of the grid define the following algebraic constr
 <img width="4624" height="283" alt="eq3" src="https://github.com/user-attachments/assets/7c19653f-efb2-4273-8b2e-3c7730e1a55f" />
 
 
-where $$B_{ij}$$​ denotes the imaginary part of the admittance of the transmission line between nodes $$i$$ and $$j$$, and $$V_i$$  represents the voltage magnitude at node $$i$$.
+where BijB_{ij}​ denotes the imaginary part of the admittance of the transmission line between nodes ii and jj, and ViV_i  represents the voltage magnitude at node ii.
 
 Finally, we consider the following equation to quantify the contributions of a set of generators $$𝒱_{gen}$$ on the system inertia [8]:
 
