@@ -34,6 +34,37 @@ Based on the location and generation capacity data provided in Ref. [3], a total
 
 Fig. S2 shows the inertia coefficients grouped by generation type. Circles indicate the mean value for each type, and error bars span the minimum and maximum values among generators of the same type.
 
+## Grid-Forming Inertia Parameterization
+
+Fig. S2 shows the inertia coefficients grouped by generation type. Circles indicate the mean value for each type, and error bars span the minimum and maximum values among generators of the same type.
+
+In this model, the inertia of inverter-based generators operating in grid-forming (GFM) mode is parameterized using the inertia constant H, following the formulation adopted in the ENTSO-E technical report on grid-forming capability (Ref. [9]).
+
+According to the ENTSO-E report (pp. 18–19), synthetic inertia is expressed in terms of the ramp-up time TR,PPMT_{R,PPM} (in seconds), defined as
+
+$$
+T_{R,PPM} = 2H.
+$$
+
+The recommended range for grid-forming inverters is
+
+$$
+T_{R,PPM} \in [0, 25] \text{ s},
+$$
+
+with a default value of 1010 s.
+
+Mapping this formulation to our model:
+
+- **Grid-following baseline**  
+  H=0.01⇒TR,PPM=0.02H = 0.01 \Rightarrow T_{R,PPM} = 0.02 s  
+
+- **Grid-forming scenario**  
+  H=0.3⇒TR,PPM=0.6H = 0.3 \Rightarrow T_{R,PPM} = 0.6 s  
+
+Thus, the adopted grid-forming setting lies well within the ENTSO-E recommended range and substantially below the default value. The parameter choice therefore represents a moderate and technically feasible level of synthetic inertia provision rather than an extreme or unrealistic assumption.
+
+
 
 <img width="1650"  alt="Picture3" src="https://github.com/user-attachments/assets/20b047ce-e045-4557-89d4-4b4e660426cd" />
 
@@ -73,7 +104,7 @@ The dynamic behavior of the power-grid network is analyzed using the `Dynamic_an
 <img width="4624" height="206" alt="eq1" src="https://github.com/user-attachments/assets/99dbdeab-ecd3-444d-9929-6cdb02a37ca6" />
 
 
-where $$\delta_i$$ denotes the voltage phase angle of generator $$i$$, $$M_i$$ and $$D_i$$ denotes its inertia and damping coefficients, $$P_{i(0)}$$ is the mechanical power of node, and $$P_{i(e)}$$ is the electric power of node. To reflect the low-inertia characteristics of wind and solar generators, a uniform inertia constant of 0.01 is assigned to them—one to two orders of magnitude smaller than that of conventional power sources (see Fig. S2). The damping coefficient is uniformly set to 0.005. This setting represents typical grid-following behavior with limited dynamic support. When assessing the impact of synthetic inertia provided by renewable generators on grid frequency response, we multiply the inertia of selected wind and solar generators by a positive scaling factor. This numerical approach emulates the dynamic behavior of grid-forming power sources operating under virtual synchronous machine (VSM) control. The imbalance between $$P_{i(e)}$$ and  $$P_{i(0)}$$ caused by the disturbance is the driving factor behind the onset of power system oscillations and potential instability. 
+where δi\delta_i denotes the voltage phase angle of generator ii, MiM_i and DiD_i denotes its inertia and damping coefficients, Pi(0)P_{i(0)} is the mechanical power of node, and Pi(e)P_{i(e)} is the electric power of node. To reflect the low-inertia characteristics of wind and solar generators, a uniform inertia constant of 0.01 is assigned to them—one to two orders of magnitude smaller than that of conventional power sources (see Fig. S2). The damping coefficient is uniformly set to 0.005. This setting represents typical grid-following behavior with limited dynamic support. When assessing the impact of synthetic inertia provided by renewable generators on grid frequency response, we multiply the inertia of selected wind and solar generators by a positive scaling factor. This numerical approach emulates the dynamic behavior of grid-forming power sources operating under virtual synchronous machine (VSM) control. The imbalance between Pi(e)P_{i(e)} and  Pi(0)P_{i(0)} caused by the disturbance is the driving factor behind the onset of power system oscillations and potential instability. 
 
 The dynamics of load nodes are described by first-order equations: 
 
