@@ -32,9 +32,6 @@ Based on the location and generation capacity data provided in Ref. [3], a total
 
 **Table S1:** *List of the 13 types of power sources included in the European model, along with their corresponding abbreviations.*
 
-Fig. S2 shows the inertia coefficients grouped by generation type. Circles indicate the mean value for each type, and error bars span the minimum and maximum values among generators of the same type.
-
-## Grid-Forming Inertia Parameterization
 
 Fig. S2 shows the inertia coefficients grouped by generation type. Circles indicate the mean value for each type, and error bars span the minimum and maximum values among generators of the same type.
 
