@@ -96,30 +96,58 @@ A notable observation is the reduced power transfer across the interconnections 
 
 The dynamic behavior of the power-grid network is analyzed using the `Dynamic_analysis.m` script. The dynamics of generation nodes follows the second-order swing equation: 
 
+$$
+M_i \ddot{\delta}_i + D_i \dot{\delta}_i 
+= P_{i(0)} - P_{i(e)}, 
+\quad \text{if } i \in \mathcal{V}_{\mathrm{gen}}
+$$
 
+<!--
 <img width="4624" height="206" alt="eq1" src="https://github.com/user-attachments/assets/99dbdeab-ecd3-444d-9929-6cdb02a37ca6" />
-
+--!>
 
 where δi\delta_i denotes the voltage phase angle of generator ii, MiM_i and DiD_i denotes its inertia and damping coefficients, Pi(0)P_{i(0)} is the mechanical power of node, and Pi(e)P_{i(e)} is the electric power of node. To reflect the low-inertia characteristics of wind and solar generators, a uniform inertia constant of 0.01 is assigned to them—one to two orders of magnitude smaller than that of conventional power sources (see Fig. S2). The damping coefficient is uniformly set to 0.005. This setting represents typical grid-following behavior with limited dynamic support. When assessing the impact of synthetic inertia provided by renewable generators on grid frequency response, we multiply the inertia of selected wind and solar generators by a positive scaling factor. This numerical approach emulates the dynamic behavior of grid-forming power sources operating under virtual synchronous machine (VSM) control. The imbalance between Pi(e)P_{i(e)} and  Pi(0)P_{i(0)} caused by the disturbance is the driving factor behind the onset of power system oscillations and potential instability. 
 
 The dynamics of load nodes are described by first-order equations: 
 
+$$
+D_i \dot{\delta}_i 
+= P_{i(0)} - P_{i(e)}, 
+\quad i \in \mathcal{V}_{\mathrm{load}}
+$$
 
+<!--
 <img width="4624" height="206" alt="eq2" src="https://github.com/user-attachments/assets/7ee27cf3-07b4-4c7e-b3a3-6733b16b6b22" />
-
+--!>
 
 Then, the power flow equations of the grid define the following algebraic constraints on the dynamical model:
 
+$$
+P_{i(e)} 
+= \sum_{j \in \mathcal{V}} 
+B_{ij} V_i V_j \sin(\delta_i - \delta_j)
+$$
 
+<!--
 <img width="4624" height="283" alt="eq3" src="https://github.com/user-attachments/assets/7c19653f-efb2-4273-8b2e-3c7730e1a55f" />
-
+--!>
 
 where BijB_{ij}​ denotes the imaginary part of the admittance of the transmission line between nodes ii and jj, and ViV_i  represents the voltage magnitude at node ii.
 
 Finally, we consider the following equation to quantify the contributions of a set of generators $$𝒱_{gen}$$ on the system inertia [8]:
 
-<img width="4624" height="483" alt="eq4" src="https://github.com/user-attachments/assets/1068fddd-e54f-4105-adab-1302378b8163" />
+$$
+M_{\mathrm{eq}} 
+= \frac{
+\sum_{i \in \mathcal{V}_{\mathrm{gen}}} M_i P_{i(e)}
+}{
+\sum_{i \in \mathcal{V}_{\mathrm{gen}}} P_{i(e)}
+}
+$$
 
+<!--
+<img width="4624" height="483" alt="eq4" src="https://github.com/user-attachments/assets/1068fddd-e54f-4105-adab-1302378b8163" />
+--!>
 
 
 #### Disturbance
