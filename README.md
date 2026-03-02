@@ -104,8 +104,21 @@ $$
 
 
 
-where δi\delta_i denotes the voltage phase angle of generator ii, MiM_i and DiD_i denotes its inertia and damping coefficients, Pi(0)P_{i(0)} is the mechanical power of node, and Pi(e)P_{i(e)} is the electric power of node. To reflect the low-inertia characteristics of wind and solar generators, a uniform inertia constant of 0.01 is assigned to them—one to two orders of magnitude smaller than that of conventional power sources (see Fig. S2). The damping coefficient is uniformly set to 0.005. This setting represents typical grid-following behavior with limited dynamic support. When assessing the impact of synthetic inertia provided by renewable generators on grid frequency response, we multiply the inertia of selected wind and solar generators by a positive scaling factor. This numerical approach emulates the dynamic behavior of grid-forming power sources operating under virtual synchronous machine (VSM) control. The imbalance between Pi(e)P_{i(e)} and  Pi(0)P_{i(0)} caused by the disturbance is the driving factor behind the onset of power system oscillations and potential instability. 
-
+where $\delta_i$ denotes the voltage phase angle of generator $i$, 
+$M_i$ and $D_i$ denote its inertia and damping coefficients, 
+$P_{i(0)}$ is the mechanical power of node $i$, and 
+$P_{i(e)}$ is the electrical power of node $i$. 
+To reflect the low-inertia characteristics of wind and solar generators, 
+a uniform inertia constant of $0.01$ is assigned to them—one to two orders of magnitude 
+smaller than that of conventional power sources (see Fig. S2). 
+The damping coefficient is uniformly set to $0.005$. 
+This setting represents typical grid-following behavior with limited dynamic support. 
+When assessing the impact of synthetic inertia provided by renewable generators 
+on grid frequency response, we multiply the inertia of selected wind and solar generators 
+by a positive scaling factor. This numerical approach emulates the dynamic behavior 
+of grid-forming power sources operating under virtual synchronous machine (VSM) control. 
+The imbalance between $P_{i(e)}$ and $P_{i(0)}$ caused by the disturbance 
+is the driving factor behind the onset of power system oscillations and potential instability.
 The dynamics of load nodes are described by first-order equations: 
 
 
@@ -128,9 +141,13 @@ $$
 
 
 
-where BijB_{ij}​ denotes the imaginary part of the admittance of the transmission line between nodes ii and jj, and ViV_i  represents the voltage magnitude at node ii.
+where $B_{ij}$ denotes the imaginary part of the admittance 
+of the transmission line between nodes $i$ and $j$, 
+and $V_i$ represents the voltage magnitude at node $i$.
 
-Finally, we consider the following equation to quantify the contributions of a set of generators $$𝒱_{gen}$$ on the system inertia [8]:
+Finally, we consider the following equation to quantify 
+the contributions of a set of generators $\mathcal{V}_{\mathrm{gen}}$ 
+to the system inertia [8]:
 
 $$
 M_{\mathrm{eq}} 
