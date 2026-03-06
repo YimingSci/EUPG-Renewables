@@ -36,14 +36,12 @@ Fig. S2 shows the inertia coefficients grouped by generation type. Circles indic
 
 In this model, the inertia of inverter-based generators operating in grid-forming (GFM) mode is parameterized using the inertia constant 
 $H$
-
 , following the formulation adopted in the ENTSO-E technical report on grid-forming capability (Ref. [9]). According to the ENTSO-E report (pp. 18–19), synthetic inertia is expressed in terms of the ramp-up time 
 $T_{R,PPM}$
 (in seconds), defined as
 $T_{R,PPM} = 2H$.
 The recommended range for grid-forming inverters is
-$T_{R,PPM} \in [0, 25] \text{ s},$
-with a default value of 10 s.
+$T_{R,PPM} \in [0, 25] \text{ s}.$
 Mapping this formulation to our model:
 
 - **Grid-following baseline**:
@@ -52,8 +50,7 @@ Mapping this formulation to our model:
   $T_{R,PPM}$
   =0.02s.
 
-- **Grid-forming scenario**:  
-  $H$
+- **Grid-forming scenario**:  $H$
   =0.3⇒
   $T_{R,PPM}$
   =0.6s.  
