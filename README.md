@@ -169,6 +169,27 @@ Our simulations consider six initial disturbances across the Iberian Peninsula, 
 **Table S2:** *Information on the locations and power loss of the initial disturbances. More than ten power loss events are grouped into six buses based on the disturbance locations, each named after a representative city. The Bus ID indicates the bus number of the simulated disturbance node, which can be cross-referenced with the bus numbers in `PSF_renewable.mat`*
 
 
+
+### Suppression of frequency deviations by synthetic inertia
+
+To provide a formal assessment of the impact of synthetic inertia on frequency disturbance suppression, we perform a sensitivity-based parameter sweep over a broad range of inertia values within the range considered in ENTSO-E guidelines.
+For each inertia value, the system is simulated under the same disturbance, and the fraction of buses exhibiting large frequency deviations is quantified, defined as  $\int f(t)^2 dt \geq 0.5$
+.
+
+As shown in Fig. S5(E), the fraction of buses with large frequency deviations decreases rapidly as the inertia level increases and approaches zero beyond a certain threshold, exhibiting a robust monotonic trend.
+Figs. S5(A–D) provide a geographical view of the spatial distribution of frequency fluctuations.
+These results indicate that the suppression of frequency fluctuations is not tied to specific parameter choices, but reflects a general dynamical effect associated with increasing inertia.
+
+
+<img width="2892" height="1542" alt="Fig_compare2" src="https://github.com/user-attachments/assets/47326f3f-f669-4c4f-83ea-60bad45154f8" />
+
+
+**Fig. S5:** *Sensitivity of frequency deviations to virtual inertia.*
+
+
+
+
+
 #### Additional mitigation plan
 
 In Ref. [1], we present two mitigation strategies to improve the system resilience against frequency fluctuations: one involves increasing the interconnection capacity between Spain and France, while the other focuses on increasing the synthetic inertia of renewable sources within the Iberian Peninsula. Here, we consider the combined implementation of both strategies and demonstrate that their joint effect leads to a significantly improved system response.
@@ -177,25 +198,12 @@ In Ref. [1], we present two mitigation strategies to improve the system resilie
 <img width="2892" height="1527" alt="6" src="https://github.com/user-attachments/assets/729b20b4-7e8b-4064-8658-fa7d83229a9d" />
 
 
-**Fig. S5:** *Frequency fluctuations across the Iberian Peninsula are even more suppressed when both mitigation plans are jointly applied.*
+**Fig. S6:** *Frequency fluctuations across the Iberian Peninsula are even more suppressed when both mitigation plans are jointly applied.*
 
 
 
 
 
-
-
-### Suppression of frequency deviations by synthetic inertia
-
-To provide a formal assessment of the impact of synthetic inertia on frequency disturbance suppression, we perform a sensitivity-based parameter sweep over inertia values within the range considered in ENTSO-E guidelines.
-%
-For each inertia value, the system is simulated under the same disturbance, and the fraction of buses exhibiting large frequency deviations is quantified, defined as $\mathrm{fraction}(f_i > 0.5)$.
-
-As shown in Fig. S6(E), the fraction of buses with large frequency deviations decreases rapidly as the inertia level increases and approaches zero beyond a certain threshold, exhibiting a robust monotonic trend.
-%
-Figs. S6(A–D) provide a geographical view of the spatial distribution of frequency fluctuations.
-%
-These results indicate that the suppression of frequency fluctuations is not tied to specific parameter choices, but reflects a general dynamical effect associated with increasing inertia.
 
 
 
