@@ -10,7 +10,7 @@ The European power-grid model incorporates **7,343** transmission lines, **3,809
 
 For power system analysis, we utilize widely adopted open-source tools, including the power flow solver MATPOWER [4] and the time-domain dynamic simulation framework described in Ref. [2]. Both tools are implemented in MATLAB, and we recommend using version R2024a for compatibility. See the reference below for more details.
 
-<img width="2695" height="1480" alt="1" src="https://github.com/user-attachments/assets/791be8ea-0292-4004-998c-c2e377a3f349" />
+<img width="2695" height="1150" alt="1" src="https://github.com/user-attachments/assets/791be8ea-0292-4004-998c-c2e377a3f349" />
 
 
 
@@ -28,7 +28,7 @@ The parameters and geographical locations of these generators are based on datas
 #### Wind and solar power generations
 Based on the location and generation capacity data provided in Ref. [3], a total of 2,423 photovoltaic power stations and 32,644 wind turbines in the PSF region have been integrated into the European power grid model. Solar/wind generators with unreported generation capacity were turned off in the model.
 
-<img width="3096" height="807" alt="2" src="https://github.com/user-attachments/assets/cb75bc5b-a4d3-4312-a709-f67dbd675493" />
+<img width="3096" height="507" alt="2" src="https://github.com/user-attachments/assets/cb75bc5b-a4d3-4312-a709-f67dbd675493" />
 
 **Table S1:** *List of the 13 types of power sources included in the European model, along with their corresponding abbreviations.*
 
@@ -66,7 +66,7 @@ Thus, the adopted grid-forming setting lies well within the ENTSO-E recommended 
 
 Based on data provided by the transmission system operators (TSO), Fig. S3a-c shows the power generation profiles of Portugal [5], Spain [5], and France [6] on April 28, 2025. The blackout happened around 12:32 pm (UTC+01:00). To reflect this generation mix in the simulations, we pre-adjusted the generator outputs and power flows in the PSF region so that the modeled power mix in the three countries matches the conditions observed on that date, as shown in Fig. S3d-f.
 
-<img width="2685" height="2090" alt="3" src="https://github.com/user-attachments/assets/fd1d8d46-738e-46bb-b877-f79ab5d9c288" />
+<img width="1085" height="790" alt="3" src="https://github.com/user-attachments/assets/fd1d8d46-738e-46bb-b877-f79ab5d9c288" />
 
 
 **Fig. S3:**
@@ -163,7 +163,7 @@ $$
 Our simulations consider six initial disturbances across the Iberian Peninsula, with their locations and magnitudes estimated from the official TSO report [7]. Details of the disturbances are provided in Table S1. The disturbances are applied to the electrical power injections at these six nodes, representing sudden power drops in the grid.
 
 
-<img width="3095" height="806" alt="5" src="https://github.com/user-attachments/assets/5d55b9a6-d897-48ac-b934-122e25fe8fb4" />
+<img width="3095" height="556" alt="5" src="https://github.com/user-attachments/assets/5d55b9a6-d897-48ac-b934-122e25fe8fb4" />
 
 
 **Table S2:** *Information on the locations and power loss of the initial disturbances. More than ten power loss events are grouped into six buses based on the disturbance locations, each named after a representative city. The Bus ID indicates the bus number of the simulated disturbance node, which can be cross-referenced with the bus numbers in `PSF_renewable.mat`*
@@ -181,7 +181,7 @@ Figs. S5(A–D) provide a geographical view of the spatial distribution of frequ
 These results indicate that the suppression of frequency fluctuations is not tied to specific parameter choices, but reflects a general dynamical effect associated with increasing inertia.
 
 
-<img width="2892" height="1542" alt="Fig_compare2" src="https://github.com/user-attachments/assets/47326f3f-f669-4c4f-83ea-60bad45154f8" />
+<img width="2892" height="842" alt="Fig_compare2" src="https://github.com/user-attachments/assets/47326f3f-f669-4c4f-83ea-60bad45154f8" />
 
 
 **Fig. S5:** *Sensitivity analysis of frequency deviations to virtual inertia.*
@@ -195,7 +195,7 @@ These results indicate that the suppression of frequency fluctuations is not tie
 In Ref. [1], we present two mitigation strategies to improve the system resilience against frequency fluctuations: one involves increasing the interconnection capacity between Spain and France, while the other focuses on increasing the synthetic inertia of renewable sources within the Iberian Peninsula. Here, we consider the combined implementation of both strategies and demonstrate that their joint effect leads to a significantly improved system response.
 
 
-<img width="2892" height="1527" alt="6" src="https://github.com/user-attachments/assets/729b20b4-7e8b-4064-8658-fa7d83229a9d" />
+<img width="2892" height="1000" alt="6" src="https://github.com/user-attachments/assets/729b20b4-7e8b-4064-8658-fa7d83229a9d" />
 
 
 **Fig. S6:** *Frequency fluctuations across the Iberian Peninsula are even more suppressed when both mitigation plans are jointly applied.*
