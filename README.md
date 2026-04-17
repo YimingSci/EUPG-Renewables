@@ -170,7 +170,7 @@ Our simulations consider six initial disturbances across the Iberian Peninsula, 
 
 
 
-### Suppression of frequency deviations by synthetic inertia
+#### Suppression of frequency deviations by synthetic inertia
 
 To provide a formal assessment of the impact of synthetic inertia on frequency disturbance suppression, we perform a sensitivity-based parameter sweep over a broad range of inertia values within the range considered in ENTSO-E guidelines.
 For each inertia value, the system is simulated under the same disturbance, and the fraction of buses exhibiting large frequency deviations is quantified, defined as  $\int f(t)^2 dt \geq 0.5$
