@@ -152,7 +152,7 @@ M_{\mathrm{eq}}
 \sum_{i \in \mathcal{V}_{\mathrm{gen}}} M_i P_{i(e)}
 }{
 \sum_{i \in \mathcal{V}_{\mathrm{gen}}} P_{i(e)}
-}
+},
 $$
 
 
