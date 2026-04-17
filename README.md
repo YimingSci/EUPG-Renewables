@@ -184,7 +184,7 @@ These results indicate that the suppression of frequency fluctuations is not tie
 <img width="2892" height="1542" alt="Fig_compare2" src="https://github.com/user-attachments/assets/47326f3f-f669-4c4f-83ea-60bad45154f8" />
 
 
-**Fig. S5:** *Sensitivity of frequency deviations to virtual inertia.*
+**Fig. S5:** *Sensitivity analysis of frequency deviations to virtual inertia.*
 
 
 
