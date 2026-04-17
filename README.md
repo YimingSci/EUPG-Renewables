@@ -96,7 +96,7 @@ The dynamic behavior of the power-grid network is analyzed using the `Dynamic_an
 $$
 M_i \ddot{\delta}_i + D_i \dot{\delta}_i 
 = P_{i(0)} - P_{i(e)}, 
-\quad \text{if } i \in \mathcal{V}_{\mathrm{gen}}
+\quad \text{if } i \in \mathcal{V}_{\mathrm{gen}},
 $$
 
 
@@ -122,7 +122,7 @@ The dynamics of load nodes are described by first-order equations:
 $$
 D_i \dot{\delta}_i 
 = P_{i(0)} - P_{i(e)}, 
-\quad i \in \mathcal{V}_{\mathrm{load}}
+\quad i \in \mathcal{V}_{\mathrm{load}},
 $$
 
 
@@ -133,7 +133,7 @@ Then, the power flow equations of the grid define the following algebraic constr
 $$
 P_{i(e)} 
 = \sum_{j \in \mathcal{V}} 
-B_{ij} V_i V_j \sin(\delta_i - \delta_j)
+B_{ij} V_i V_j \sin(\delta_i - \delta_j),
 $$
 
 
