@@ -66,7 +66,7 @@ Thus, the adopted grid-forming setting lies well within the ENTSO-E recommended 
 
 Based on data provided by the transmission system operators (TSO), Fig. S3a-c shows the power generation profiles of Portugal [5], Spain [5], and France [6] on April 28, 2025. The blackout happened around 12:32 pm (UTC+01:00). To reflect this generation mix in the simulations, we pre-adjusted the generator outputs and power flows in the PSF region so that the modeled power mix in the three countries matches the conditions observed on that date, as shown in Fig. S3d-f.
 
-<img width="585" height="490" alt="3" src="https://github.com/user-attachments/assets/fd1d8d46-738e-46bb-b877-f79ab5d9c288" />
+<img width="650" height="490" alt="3" src="https://github.com/user-attachments/assets/fd1d8d46-738e-46bb-b877-f79ab5d9c288" />
 
 
 **Fig. S3:**
