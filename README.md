@@ -163,7 +163,7 @@ $$
 Our simulations consider six initial disturbances across the Iberian Peninsula, with their locations and magnitudes estimated from the official TSO report [7]. Details of the disturbances are provided in Table S1. The disturbances are applied to the electrical power injections at these six nodes, representing sudden power drops in the grid.
 
 
-<img width="3095" height="556" alt="5" src="https://github.com/user-attachments/assets/5d55b9a6-d897-48ac-b934-122e25fe8fb4" />
+<img width="3095" height="756" alt="5" src="https://github.com/user-attachments/assets/5d55b9a6-d897-48ac-b934-122e25fe8fb4" />
 
 
 **Table S2:** *Information on the locations and power loss of the initial disturbances. More than ten power loss events are grouped into six buses based on the disturbance locations, each named after a representative city. The Bus ID indicates the bus number of the simulated disturbance node, which can be cross-referenced with the bus numbers in `PSF_renewable.mat`*
