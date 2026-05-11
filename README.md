@@ -181,7 +181,7 @@ Figs. S5(A–D) provide a geographical view of the spatial distribution of frequ
 These results indicate that the suppression of frequency fluctuations is not tied to specific parameter choices, but reflects a general dynamical effect associated with increasing inertia.
 
 
-<img width="2892" height="1050" alt="Fig_compare2" src="https://github.com/user-attachments/assets/47326f3f-f669-4c4f-83ea-60bad45154f8" />
+<img width="2892" height="1200" alt="Fig_compare2" src="https://github.com/user-attachments/assets/47326f3f-f669-4c4f-83ea-60bad45154f8" />
 
 
 **Fig. S5:** *Sensitivity analysis of frequency deviations to virtual inertia.*
