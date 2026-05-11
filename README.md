@@ -28,7 +28,7 @@ The parameters and geographical locations of these generators are based on datas
 #### Wind and solar power generations
 Based on the location and generation capacity data provided in Ref. [3], a total of 2,423 photovoltaic power stations and 32,644 wind turbines in the PSF region have been integrated into the European power grid model. Solar/wind generators with unreported generation capacity were turned off in the model.
 
-<img width="3096" height="507" alt="2" src="https://github.com/user-attachments/assets/cb75bc5b-a4d3-4312-a709-f67dbd675493" />
+<img width="3096" height="807" alt="2" src="https://github.com/user-attachments/assets/cb75bc5b-a4d3-4312-a709-f67dbd675493" />
 
 **Table S1:** *List of the 13 types of power sources included in the European model, along with their corresponding abbreviations.*
 
